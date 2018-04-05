@@ -1,6 +1,8 @@
 * {
     box-sizing: border-box;
     /*outline: 1px solid red;*/
+    font-family: Arial, sans-serif;
+
 }
 
 html, body {
@@ -17,6 +19,11 @@ html, body {
     z-index: 10;
 }
 
+.topbar-content {
+    width: 960px;
+    margin: 0 auto;
+}
+
 .logo {
     width: 80px;
     height: 80px;
@@ -31,13 +38,61 @@ html, body {
 
 .navigation {
     float: right;
+    text-align: center;
+    text-decoration: none;
+
 }
 
 .navigation-list-item {
     float: left;
-    padding: 10px 5px;
-    background: #292929;
+    padding: 10px 0;
+    width: 100px;
+    /*background: #292929;*/
     list-style: none;
+    margin: 0;
+    text-transform: uppercase;
+    font-style: normal;
+    /**/
+    border-top: 4px solid;
+    display: block;
+
+}
+
+.navigation-list-item a {
+    display: block;
+    padding: 5px;
+    color: #ffffff;
+    text-decoration: none;
+    /*border-top: 4px solid red;*/
+
+}
+
+li:first-child {
+    border-color: yellow;
+}
+
+li:nth-child(2) {
+    border-color: orange;
+}
+
+li:nth-child(3) {
+    border-color: red;
+}
+
+li:nth-child(4) {
+    border-color: purple;
+}
+
+li:nth-child(5) {
+    border-color: midnightblue;
+}
+
+li:nth-child(6) {
+    border-color: darkblue;
+}
+
+li:nth-child(7) {
+    border-color: royalblue;
 }
 
 .hero {
@@ -80,99 +135,179 @@ h2 {
     text-align: center;
 }
 
-.form {
+.blog {
+    margin: 0 auto;
+    /*width: 960px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
 
+.blog-item {
+    width: 290px;
+    margin: 0 10px;
+    border-bottom: 1px solid lightgray;
+    padding-bottom: 10px;
+}
+
+.post-image {
+    width: 290px;
+    height: 220px;
+}
+
+.post-title {
+    color: lightseagreen;
+    font-size: 1.2em;
+    margin: 10px 0;
+}
+
+.post-intro {
+
+}
+
+.post-footer {
+    margin-top: 8px;
+}
+
+a.learn-more {
+    color: lightseagreen;
+    float: left;
+    text-decoration: none;
+}
+
+a.comments {
+    float: right;
+    padding-left: 20px;
+}
+
+#company-experience {
+    background: lightseagreen;
+    margin: 60px 0;
+    padding: 60px 0;
+    color: white;
+}
+
+.company-experience {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.experience-image {
+    border: 4px solid white;
+    border-radius: 50%;
+    -moz-border-radius: 50%;
+    -webkit-border-radius: 50%;
+    width: 100px;
+    height: 100px;
+}
+
+.experience-item {
+    display: inline-block;
     text-align: center;
+}
+
+.experience-divider {
+    display: inline-block;
+}
+
+.experience-counter {
+    font-size: 1.8em;
+}
+
+.band {
+    margin: 0 auto;
+    /*width: 960px;*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.team-member {
+    display: inline-block;
+    width: 210px;
+    border: 1px solid lightgray;
+    margin: 0 30px;
+}
+
+.member-bio {
+    border-top: 1px solid lightgray;
+    padding: 0 0 30px 0;
+    margin-top: 160px;
 
 }
 
-.box {
-    margin: 0;
-    padding: 0;
-    font: 100% normal Arial, Helvetica, sans-serif;
-    background: #161712;
-}
-form, input, select, textarea {
-    margin:0;
-    padding:0;
-    color:#ffffff;
-}
-
-div.box {
-    margin:0 auto;
-    width:500px;
-    background:#222222;
-    position:relative;
-    top:50px;
-    border:1px solid #262626;
-}
-
-div.box h1 {
-    color:#ffffff;
-    font-size:18px;
-    text-transform:uppercase;
-    padding:5px 0 5px 5px;
-    border-bottom:1px solid #161712;
-    border-top:1px solid #161712;
-}
-
-div.box label {
-    width:100%;
-    display: block;
-    background:#1C1C1C;
-    border-top:1px solid #262626;
-    border-bottom:1px solid #161712;
-    padding:10px 0 10px 0;
-}
-
-div.box label span {
-    display: block;
-    color:#bbbbbb;
-    font-size:12px;
-    float:left;
-    width:100px;
-    text-align:right;
-    padding:5px 20px 0 0;
-}
-span.clients {
-    display:inline;
-}
-
-div.box .wpis {
-    padding:10px 10px;
-    width:200px;
-    background:#262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left:1px double #333333;
-    border-right:1px double #333333;
-}
-
-div.box .wiadomosc {
-    padding:7px 7px;
-    width:350px;
-    background:#262626;
-    border-bottom: 1px double #171717;
-    border-top: 1px double #171717;
-    border-left:1px double #333333;
-    border-right:1px double #333333;
-    overflow:hidden;
-    height:150px;
-}
-
-#contact form button	{
-    margin:0 0 10px 0;
-    padding:4px 7px;
-    background:#CC0000;
-    border:0;
+.member-name {
+    background: #ffffff;
+    border: 1px solid lightgray;
+    width: 150px;
+    padding: 15px 0;
+    text-align: center;
     position: relative;
-    top:10px;
-    left:382px;
-    width:100px;
-    border-bottom: 1px double #660000;
-    border-top: 1px double #660000;
-    border-left:1px double #FF0033;
-    border-right:1px double #FF0033;
+    top: -30px;
+    left: 30px;
+
 }
 
+.full-name {
+    color: lightseagreen;
+    font-weight: bold;
+    padding: 0;
+}
 
+.description {
+    color: gray;
+    padding: 0;
+}
+
+.bio-short {
+    padding: 0 15px;
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+a.bio-link {
+    display: block;
+    width: 150px;
+    border: 2px solid lightseagreen;
+    color: lightseagreen;
+    text-align: center;
+    font-weight: bold;
+    padding: 5px 0;
+    text-transform: uppercase;
+    margin: 0 auto;
+    font-size: 0.8em;
+}
+
+a.bio-link:hover {
+    color: white;
+    background-color: lightseagreen;
+}
+
+.contact-content {
+    margin: 60px auto;
+    width: 960px;
+}
+
+.contact-top {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.contact-item label, .contact-item input {
+    display: block;
+    width: 320px;
+}
+
+.contact-middle {
+
+}
+
+.contact-bottom label, .contact-bottom textarea {
+    display: block;
+    width: 100%;
+}
+
+.contact-submit {
+    float: right;
+}

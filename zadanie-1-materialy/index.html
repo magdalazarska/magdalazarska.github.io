@@ -9,19 +9,21 @@
 <body>
 <header class="header">
     <div class="topbar">
-        <img src="assets/images/logo.png" class="logo" alt="amber-logo">
-        <nav class="navigation">
-            <ul class="navigation-list">
-                <li class="navigation-list-item"><a href="#works"></a></li>
-                <li class="navigation-list-item"><a href="#features">Features</a></li>
-                <li class="navigation-list-item"><a href="#opinions">Opinions</a></li>
-                <li class="navigation-list-item"><a href="#blog">Blog</a></li>
-                <li class="navigation-list-item"><a href="#company">Company</a></li>
-                <li class="navigation-list-item"><a href="#team">Team</a></li>
-                <li class="navigation-list-item"><a href="#prices">Prices</a></li>
-                <li class="navigation-list-item"><a href="#contact">Contact</a></li>
-            </ul>
-        </nav>
+        <div class="topbar-content">
+            <img src="assets/images/logo.png" class="logo" alt="amber-logo">
+            <nav class="navigation">
+                <ul class="navigation-list">
+
+                    <li class="navigation-list-item"><a href="#features">Features</a></li>
+                    <li class="navigation-list-item"><a href="#opinions">Opinions</a></li>
+                    <li class="navigation-list-item"><a href="#blog">Blog</a></li>
+                    <li class="navigation-list-item"><a href="#company">Company</a></li>
+                    <li class="navigation-list-item"><a href="#team">Team</a></li>
+                    <li class="navigation-list-item"><a href="#prices">Prices</a></li>
+                    <li class="navigation-list-item"><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
     </div>
     <div class="hero">
         <div class="hero-content">
@@ -94,84 +96,230 @@
         </div>
     </section>
     <section class="section" id="opinions"><h2>Opinions</h2></section>
-    <section class="section" id="blog"><h2>Latest blog posts</h2></section>
-    <section class="section" id="company-experience"><h2>Company experience</h2></section>
-    <section class="section" id="team"><h2>Our team</h2></section>
+    <section class="section" id="blog">
+        <h2>Latest blog posts</h2>
+        <div class="blog">
+            <div class="blog-item">
+                <img src="" class="post-image"/>
+                <h4 class="post-title">The Beatles roadtrip</h4>
+                <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem
+                    commodi consequatur eius error excepturi exercitationem, fugiat iste magni minus non optio,
+                    perferendis qui, quis quo sed tempora voluptatem?</p>
+                <div class="post-footer">
+                    <a class="learn-more">Learn more</a>
+                    <a class="comments"><i class="fas fa-comments"></i> 69</a>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="" class="post-image"/>
+                <h4 class="post-title">The Beatles roadtrip</h4>
+                <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem
+                    commodi consequatur eius error excepturi exercitationem, fugiat iste magni minus non optio,
+                    perferendis qui, quis quo sed tempora voluptatem?</p>
+                <div class="post-footer">
+                    <a class="learn-more">Learn more</a>
+                    <a class="comments"><i class="fas fa-comments"></i> 69</a>
+                </div>
+            </div>
+            <div class="blog-item">
+                <img src="" class="post-image"/>
+                <h4 class="post-title">The Beatles roadtrip</h4>
+                <p class="post-intro">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Amet aperiam autem
+                    commodi consequatur eius error excepturi exercitationem, fugiat iste magni minus non optio,
+                    perferendis qui, quis quo sed tempora voluptatem?</p>
+                <div class="post-footer">
+                    <a class="learn-more">Learn more</a>
+                    <a class="comments"><i class="fas fa-comments"></i> 69</a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+    <section class="section" id="company">
+        <h2>Company experience</h2>
+        <div class="company-experience">
+            <div class="experience-item">
+                <div class="experience-image">
+                    <i class="fas fa-cogs"></i>
+                </div>
+                <div class="experience-info">
+                    <span class="experience-counter">500</span><br/>
+                    <span class="experience-details">lorem ipsum ipsum</span>
+                </div>
+            </div>
+            <div class="experience-divider">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="experience-item">
+                <div class="experience-image">
+                    <i class="fas fa-phone"></i>
+                </div>
+                <div class="experience-info">
+                    <span class="experience-counter">25 000</span><br/>
+                    <span class="experience-details">lorem ipsum ipsum</span>
+                </div>
+            </div>
+            <div class="experience-divider">
+                <i class="fas fa-ellipsis-h"></i>
+            </div>
+            <div class="experience-item">
+                <div class="experience-image">
+                    <i class="fas fa-rocket"></i>
+                </div>
+                <div class="experience-info">
+                    <span class="experience-counter">100 000</span><br/>
+                    <span class="experience-details">lorem ipsum ipsum</span>
+                </div>
+            </div>
+
+
+        </div>
+    </section>
+
+    <section class="section" id="team">
+        <h2>Our team</h2>
+        <div class="band">
+            <div class="team-member">
+
+                <div class="member-bio">
+                    <div class="member-name">
+                        <span class="full-name">Ringo Star</span><br/>
+                        <span class="description">star boy</span>
+                    </div>
+                    <div class="bio-short">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <a class="bio-link">Profile</a>
+                </div>
+            </div>
+            <div class="team-member">
+
+                <div class="member-bio">
+                    <div class="member-name">
+                        <span class="full-name">John Lenon</span><br/>
+                        <span class="description">lemon boy</span>
+                    </div>
+                    <div class="bio-short">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <a class="bio-link">Profile</a>
+                </div>
+            </div>
+            <div class="team-member">
+
+                <div class="member-bio">
+                    <div class="member-name">
+                        <span class="full-name">George Harrison</span><br/>
+                        <span class="description">hairy boy</span>
+                    </div>
+                    <div class="bio-short">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <a class="bio-link">Profile</a>
+                </div>
+            </div>
+            <div class="team-member">
+
+                <div class="member-bio">
+                    <div class="member-name">
+                        <span class="full-name">Paul McCartney</span><br/>
+                        <span class="description">Mc Donald</span>
+                    </div>
+                    <div class="bio-short">
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+                    </div>
+                    <a class="bio-link">Profile</a>
+                </div>
+            </div>
+
+        </div>
+
+
+    </section>
+
+
     <section class="section" id="prices">
         <h2>Prices</h2>
         <table class="table">
             <thead>
-                <tr>
-                    <th>Product</th>
-                    <th>Price</th>
-                    <th>In Stock</th>
-                </tr>
+            <tr>
+                <th>Product</th>
+                <th>Price</th>
+                <th>In Stock</th>
+            </tr>
             </thead>
             <tbody>
-                <tr>
-                    <td>Quick Amar</td>
-                    <td>33.00$</td>
-                    <td>Yes</td>
-                </tr>
-                <tr>
-                    <td>Browner 3.0</td>
-                    <td>100.00$</td>
-                    <td>No</td>
-                </tr>
-                <tr>
-                    <td>Ultra fast glue</td>
-                    <td>420.00$</td>
-                    <td>Yes</td>
-                </tr>
+            <tr>
+                <td>Quick Amar</td>
+                <td>33.00$</td>
+                <td>Yes</td>
+            </tr>
+            <tr>
+                <td>Browner 3.0</td>
+                <td>100.00$</td>
+                <td>No</td>
+            </tr>
+            <tr>
+                <td>Ultra fast glue</td>
+                <td>420.00$</td>
+                <td>Yes</td>
+            </tr>
             </tbody>
         </table>
     </section>
     <section class="section" id="contact">
 
-            <form method="POST" action="https://formspree.io/magda.lazarskaa@gmail.com">
-                <div class="box">
-                <h1>Contact Form</h1>
-                    <label>
-                     <span>Name</span>
-                        <input type="text" class="wpis" name="nazwa" id="nazwa" required/>
-                 </label>
-
-                    <label>
-                        <span>Phone</span>
-                        <input type="number" class="wpis" name="nazwa" id="nazwa" required/>
-                    </label>
-
-                 <label>
-                     <span>E-mail</span>
-                     <input type="email" class="wpis" name="email" id="email" required/>
-                 </label>
-
-
-                 <label>
-                        <span>Website (optional)</span>
-                        <input type="url" class="wpis" name="temat" id="temat"/>
-                 </label>
-
-
-
-                        <label>
-                        <span>Message</span>
-                        <textarea class="wiadomosc" name="wiadomosc" id="tresc" required></textarea>
-                            <button type="submit">Send</button>
-                    </label>
+        <h2>Contact</h2>
+        <div class="contact-content">
+            <div class="contact-top">
+                <div class="contact-item">
+                    <label for="name">Name</label>
+                    <input id="name" type="text" required>
                 </div>
-            </form>
+                <div class="contact-item">
+                    <label for="phone">Phone</label>
+                    <input id="phone" type="number" required>
+                </div>
+                <div class="contact-item">
+                    <label for="email">Email</label>
+                    <input id="email" type="email">
+                </div>
+            </div>
 
+            <div class="contact-bottom">
+                <label for="message">Message</label>
+                <textarea id="message" rows="10"></textarea>
+            </div>
+            <div class="contact-middle">
+                <div class="radio-option">
+                    <input type="radio" value="client" id="role-client">
+                    <label for="role-client">Client</label>
 
+                </div>
+                <div class="radio-option">
+                    <input type="radio" value="investor" id="role-investor">
+                    <label for="role-investor">Investor</label>
 
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
-        <br />
+                </div>
+                <div class="radio-option">
+                    <input type="radio" value="other" id="role-other">
+                    <label for="role-other">Other</label>
+
+                </div>
+                <div class="select-sms">
+                    <input id="contact-sms" type="checkbox">
+                    <label for="contact-sms">Contact via SMS</label>
+
+                </div>
+            </div>
+            <div class="contact-submit">
+                <button>Send</button>
+
+            </div>
+        </div>
     </section>
 </main>
+
 <footer class="main-footer">
     <section>
         <h3>Get in Touch</h3>
@@ -189,6 +337,8 @@
     </section>
 </footer>
 
-<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js" integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ" crossorigin="anonymous"></script>
+<script defer src="https://use.fontawesome.com/releases/v5.0.8/js/all.js"
+        integrity="sha384-SlE991lGASHoBfWbelyBPLsUlwY1GwNDJo3jSJO04KZ33K2bwfV9YBauFfnzvynJ"
+        crossorigin="anonymous"></script>
 </body>
 </html>
