@@ -64,31 +64,31 @@ html, body {
 }
 
 li:first-child {
-    border-color: yellow;
+    border-color: #DED5D0;
 }
 
 li:nth-child(2) {
-    border-color: orange;
+    border-color: #7A7D80;
 }
 
 li:nth-child(3) {
-    border-color: red;
+    border-color: lightblue;
 }
 
 li:nth-child(4) {
-    border-color: purple;
+    border-color: lightseagreen;
 }
 
 li:nth-child(5) {
-    border-color: midnightblue;
+    border-color: royalblue;
 }
 
 li:nth-child(6) {
-    border-color: darkblue;
+    border-color: #0027C2;
 }
 
 li:nth-child(7) {
-    border-color: royalblue;
+    border-color: darkblue;
 }
 
 .hero {
@@ -107,11 +107,40 @@ li:nth-child(7) {
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    color: lightseagreen;
+    text-transform: uppercase;
+    font-size: 30px;
+}
+
+.cta-buttons button {
+    background: lightgrey;
+    border-radius: 15px;
+    border: 2px solid lightseagreen;
+    color: lightseagreen;
+    font-size: 18px;
+    width: 190px;
+    height: 48px;
+    text-transform: uppercase;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.cta-buttons button:hover {
+    color: lightgrey;
+    background-color: lightseagreen;
+    border: 2px solid lightgrey;
+}
+
+.features-box {
+    width: 960px;
+    margin: 0 auto;
 }
 
 .feature {
     float: left;
     width: 50%;
+    margin: 0 auto;
+    padding: 0 20px;
 }
 
 .feature-icon-container {
@@ -129,10 +158,19 @@ li:nth-child(7) {
 h2 {
     text-align: center;
 }
+.box-options {
+    width:960px;
+    margin: 0 auto;
+}
+
+.box-post {
+    width:960px;
+    margin: 0 auto;
+}
 
 .blog {
     margin: 0 auto;
-    /*width: 960px;*/
+    width: 960px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -154,10 +192,6 @@ h2 {
     color: lightseagreen;
     font-size: 1.2em;
     margin: 10px 0;
-}
-
-.post-intro {
-
 }
 
 .post-footer {
@@ -272,6 +306,41 @@ a.bio-link {
     font-size: 0.8em;
 }
 
+#prices {
+    background-color: lightseagreen;
+    margin: 60px 0;
+    padding: 60px 0;
+    color: white;
+    display: grid;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.table {
+    border: 3px solid;
+    border-collapse: collapse;
+    text-transform: uppercase;
+    width: 960px;
+}
+
+.table td, th {
+    border: 3px solid white;
+    padding: 15px;
+}
+
+.table th {
+    font-size: 14px;
+    background-color: #292929;
+    color: white;
+}
+
+.table td {
+    background-color: lightgray;
+    color: lightseagreen;
+    font-size: 12px;
+}
+
 a.bio-link:hover {
     color: white;
     background-color: lightseagreen;
@@ -299,7 +368,6 @@ a.bio-link:hover {
 .contact-item label, .contact-item input {
     display: block;
     width: 260px;
-    /*padding: 20px;*/
     margin:0 33px;
     justify-content: center;
     align-items: center;
@@ -337,7 +405,7 @@ a.bio-link:hover {
     background-color: lightseagreen;
 }
 
-.contact-content h1 {
+#content h2 {
     text-align: center;
     text-transform: none;
     font-size: 1.5em;
