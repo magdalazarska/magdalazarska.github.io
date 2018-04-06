@@ -209,6 +209,11 @@ a.comments {
     padding-left: 20px;
 }
 
+.box-company {
+    width: 960px;
+    margin: 0 auto;
+}
+
 #company-experience {
     background: lightseagreen;
     margin: 60px 0;
@@ -410,4 +415,25 @@ a.bio-link:hover {
     text-transform: none;
     font-size: 1.5em;
     margin: 2px auto;
+}
+
+.box-footer {
+    text-align: center;
+    text-transform: uppercase;
+    color: lightseagreen;
+    background-color: #7A7D80;
+    margin: 60px 0;
+    padding: 60px 0;
+}
+
+.main-footer h3 {
+    text-align: center;
+    font-size: 1.5em;
+    text-transform: none;
+}
+
+.main-footer ul li {
+    text-transform: uppercase;
+    justify-content: center;
+    text-align: center;
 }
