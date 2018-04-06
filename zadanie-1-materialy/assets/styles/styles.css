@@ -2,7 +2,6 @@
     box-sizing: border-box;
     /*outline: 1px solid red;*/
     font-family: Arial, sans-serif;
-
 }
 
 html, body {
@@ -40,7 +39,6 @@ html, body {
     float: right;
     text-align: center;
     text-decoration: none;
-
 }
 
 .navigation-list-item {
@@ -55,7 +53,6 @@ html, body {
     /**/
     border-top: 4px solid;
     display: block;
-
 }
 
 .navigation-list-item a {
@@ -64,7 +61,6 @@ html, body {
     color: #ffffff;
     text-decoration: none;
     /*border-top: 4px solid red;*/
-
 }
 
 li:first-child {
@@ -116,7 +112,6 @@ li:nth-child(7) {
 .feature {
     float: left;
     width: 50%;
-    border: 2px solid red;
 }
 
 .feature-icon-container {
@@ -234,7 +229,6 @@ a.comments {
     border-top: 1px solid lightgray;
     padding: 0 0 30px 0;
     margin-top: 160px;
-
 }
 
 .member-name {
@@ -246,7 +240,6 @@ a.comments {
     position: relative;
     top: -30px;
     left: 30px;
-
 }
 
 .full-name {
@@ -287,20 +280,29 @@ a.bio-link:hover {
 .contact-content {
     margin: 60px auto;
     width: 960px;
+    background-color: #292929;
+    border:3px solid #292929;
+    padding:20px;
+    text-transform: uppercase;
+    font-size:12px;
+    color: lightseagreen;
+    font-weight: bold;
 }
 
 .contact-top {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 20px;
 }
+
 .contact-item label, .contact-item input {
     display: block;
-    width: 320px;
-}
-
-.contact-middle {
-
+    width: 260px;
+    /*padding: 20px;*/
+    margin:0 33px;
+    justify-content: center;
+    align-items: center;
 }
 
 .contact-bottom label, .contact-bottom textarea {
@@ -308,6 +310,36 @@ a.bio-link:hover {
     width: 100%;
 }
 
-.contact-submit {
+.contact-middle {
+    display: flex;
+    margin-top: 20px;
+
+}
+
+.contact-submit button {
     float: right;
+    cursor: pointer;
+    margin-bottom: 20px;
+    position: relative;
+    border-color: lightseagreen;
+    text-transform: uppercase;
+    color: lightseagreen;
+    background-color: white;
+    font-weight: bold;
+    border-radius: 4px;
+    text-align: center;
+    top: -20px;
+    left: auto;
+}
+
+.contact-submit button:hover {
+    color: white;
+    background-color: lightseagreen;
+}
+
+.contact-content h1 {
+    text-align: center;
+    text-transform: none;
+    font-size: 1.5em;
+    margin: 2px auto;
 }
