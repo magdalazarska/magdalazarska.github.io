@@ -1,0 +1,36 @@
+* {
+    color: white;
+    font-size: 30px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
+    padding: 10px;
+}
+
+
+.container1, .container2, .container3, .container4 {
+    margin: 20px 0;
+}
+
+.container1 .row .inner {
+    background-color: #005cbf;
+}
+
+.container2 .row .inner {
+    background-color: #fd7e14;
+}
+
+.container3 .row .inner {
+    background-color: #1c7430;
+}
+
+.container4 .row .inner {
+    background-color: #b21f2d;
+}
+
+.col {
+    margin: 0 20px;
+}
+
+.inner {
+    margin: 20px;
+}
