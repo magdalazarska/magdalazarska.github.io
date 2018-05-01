@@ -2,15 +2,11 @@
     box-sizing: border-box;
 }
 
-body {
-    font-family: sans-serif;
-    margin: 0;
-}
-
 .container {
     max-width: 1000px;
     margin: 0 auto;
     padding: 40px;
+    font-family: sans-serif;
 }
 
 .box {
@@ -20,8 +16,8 @@ body {
     text-shadow: 4px 4px 0 rgba(0, 0, 0, 0.1);
     padding: 10px;
     display:flex;
+    flex-wrap:wrap;
     justify-content: space-between;
-
 }
 
 .box1 .box-item {
@@ -40,6 +36,9 @@ body {
     background-color: #FF3366;
 }
 
+.box-item-boxnone {
+  display:none;
+}
 
 @media all and (max-width: 480px) {
     .box1, .box2, .box3, .box4 {
