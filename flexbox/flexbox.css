@@ -36,9 +36,6 @@
     background-color: #FF3366;
 }
 
-.box-item-boxnone {
-  display:none;
-}
 
 @media all and (max-width: 480px) {
     .box1, .box2, .box3, .box4 {
