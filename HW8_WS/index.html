@@ -50,6 +50,27 @@
             })
         }
 
+        function updateContact(contactId, contactFirstName, contactLastName, contactPhoneNumber, contactEmail) {
+            var updateContact = {
+                firstName: contactFirstName,
+                lastName: contactLastName,
+                phoneNumber: contactPhoneNumber,
+                email: contactEmail,
+            };
+
+            fetch(
+                'http://localhost:3000/contacts/' + contactId, {
+                    method: 'PATCH',
+                    body: JSON.stringify(updateContact),
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            ).then(function () {
+                syncContacts();
+            })
+        }
+
         function deleteContact(contactId) {
             fetch(
                 'http://localhost:3000/contacts/' + contactId, {
@@ -92,12 +113,47 @@
                     deleteContact(contact.id);
                 });
 
+                var editButton = document.createElement('button');
+                editButton.innerText = 'Edit';
+                editButton.addEventListener('click', function() {
+                    var editForm = document.createElement('div');
+
+                    var editFirstName = document.createElement('input');
+                    editFirstName.value = contact.firstName;
+
+                    var editLastName = document.createElement('input');
+                    editLastName.value = contact.lastName;
+
+                    var editPhoneNumber = document.createElement('input');
+                    editPhoneNumber.value = contact.phoneNumber;
+
+                    var editEmail = document.createElement('input');
+                    editEmail.value = contact.email;
+
+                    var saveButton = document.createElement('button');
+                    saveButton.innerText = 'Save';
+
+                    editForm.appendChild(editFirstName);
+                    editForm.appendChild(editLastName);
+                    editForm.appendChild(editPhoneNumber);
+                    editForm.appendChild(editEmail);
+                    editForm.appendChild(saveButton);
+
+                    listNode.appendChild(editForm);
+
+                    saveButton.addEventListener('click', function() {
+                        updateContact(contact.id, editFirstName.value, editLastName.value,
+                            editPhoneNumber.value, editEmail.value);
+                    })
+                });
+
                 listNode.innerText = contact.lastName + ', ' + contact.firstName + ' ' +
                         contact.phoneNumber + ' ' +
                         contact.email;
 
                 listNode.prepend(checkbox);
                 listNode.appendChild(button);
+                listNode.appendChild(editButton);
                 contactList.prepend(listNode);
             })
         }
