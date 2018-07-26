@@ -10,10 +10,8 @@
     <input id="phone-number" />
     <input id="email" />
     <button id="add-contact">Add Contact</button>
-    <ul id="contacts">
+    <ul id="contacts"></ul>
 
-
-    </ul>
     <script>
         var contactList = document.getElementById('contacts');
         var firstNameInput = document.getElementById('first-name');
@@ -52,6 +50,17 @@
             })
         }
 
+        function deleteContact(contactId) {
+            fetch(
+                'http://localhost:3000/contacts/' + contactId, {
+                    method: 'DELETE',
+                    headers: {
+                        'Content-Type': 'application/json'
+                    }
+                }
+            ).then(syncContacts)
+        }
+
         function getContacts() {
             return fetch(
                 'http://localhost:3000/contacts'
@@ -70,14 +79,25 @@
                else if (a.lastName.toLowerCase() < b.lastName.toLowerCase()) return 1;
                else return 0;
             });
-            
+
             contacts.forEach(function (contact) {
                 var listNode = document.createElement('li');
+                var checkbox = document.createElement('input');
+                checkbox.type = 'checkbox';
+                checkbox.setAttribute('contact-id', contact.id);
+
+                var button = document.createElement('button');
+                button.innerText = 'Remove';
+                button.addEventListener('click', function() {
+                    deleteContact(contact.id);
+                });
 
                 listNode.innerText = contact.lastName + ', ' + contact.firstName + ' ' +
                         contact.phoneNumber + ' ' +
                         contact.email;
 
+                listNode.prepend(checkbox);
+                listNode.appendChild(button);
                 contactList.prepend(listNode);
             })
         }
