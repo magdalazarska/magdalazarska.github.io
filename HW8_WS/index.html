@@ -2,13 +2,45 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <title>Contact List</title>
 </head>
 <body>
-    <ul id="contacts"></ul>
+    <ul id="contacts">
+
+
+    </ul>
     <script>
+        var contactList = document.getElementById('contacts');
+
+        syncContacts();
+
+        function getContacts() {
+            return fetch(
+                'http://localhost:3000/contacts'
+            ).then(
+                function (response) {
+                    return response.json();
+                }
+            )
+        }
+
+        function displayContacts(contacts) {
+            contactList.innerHTML = '';
+            contacts.forEach(function (contact) {
+                var listNode = document.createElement('li');
+
+                listNode.innerText = contact.firstName + ' ' + contact.lastName + ' ' +
+                        contact.phoneNumber + ' ' +
+                        contact.email;
+
+                contactList.prepend(listNode);
+            })
+        }
+
+        function syncContacts() {
+            getContacts().then(displayContacts);
+        }
 
     </script>
-
 </body>
 </html>
